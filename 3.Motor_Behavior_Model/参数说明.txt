@@ -1,0 +1,15 @@
+- 阻尼 (damping)
+- 比例增益 (kp)
+- 摩擦损失 (friction loss)
+- 电枢 (armature)
+- 力范围 (force range)
+
+The friction models used in this repository are:
+
+M1: Coulomb-Viscous model
+M2: Stribeck model
+M3: Load-dependent model
+M4: Stribeck load-dependent model
+M5: Directional model
+M6: Quadratic model
+

@@ -1,0 +1,448 @@
+主固件号,次固件号开始,次固件号结束,0/1,反馈开始地址,反馈结束地址,控制开始地址,
+左曲线显示比例(4096/n),速度曲线显示比例(n/10),预留,扭矩开关,预留,预留
+[调试]
+0,0,39,1,56,72,41,4,2,0,40,0,0
+1,0,19,0,56,72,41,1,2,0,40,0,0
+1,20,39,0,56,72,41,1,2,0,40,0,0
+2,40,69,0,56,72,41,1,2,0,40,0,0
+3,0,39,0,56,72,41,1,2,0,40,0,0
+20,0,19,0,64,80,36,1,0,0,0,0,0
+3,20,39,1,56,72,41,4,2,0,40,0,0
+3,40,59,0,56,72,41,1,50,0,40,0,0
+[调试结束]
+
+----------------------------------------------------------------
+
+主型号,次型号开始,次型号结束,0/1
+[型号]
+5,0,0,1,SCSXX
+5,4,4,1,SCS009
+5,8,8,1,SCS2332
+5,12,12,1,SCS45
+5,15,15,1,SCS15
+5,16,16,1,SCS315
+5,25,25,1,SCS115
+5,35,35,1,SCS215
+5,40,40,1,SCS40
+5,60,60,1,SCS6560
+5,5,5,1,SCS1025
+6,0,0,0,SMXX-360M
+6,0,4,0,SM30-360M
+6,0,8,0,SM60-360M
+6,12,12,0,SM80-360M
+6,16,16,0,SM100-360M
+6,20,20,0,SM150-360M
+6,24,24,0,SM85-360M
+6,26,26,0,SM60-360M
+8,0,10,0,SM30BL
+8,16,16,0,SM100-360M
+8,20,20,0,SM150-360M
+8,24,24,0,SM24BL
+8,29,29,0,SM29BL(FT)
+8,30,30,0,SM30BL(FT)
+8,40,40,0,SM40BLHV
+8,42,42,0,SM45BLHV
+8,44,44,0,SM85BLHV
+8,120,120,0,SM120BLHV
+8,220,220,0,SM200BLHV
+8,25,25,0,SM70BLHV
+8,41,41,0,SM80BLHV
+8,121,121,0,SM260BLHV
+8,81,81,0,SM160BLHV
+9,0,0,0,STSXX
+9,1,1,0,STS3015
+9,2,2,0,STS3032
+9,3,3,0,STS3215
+9,4,4,0,STS3040
+9,5,5,0,STS3020
+9,6,6,0,STS3046
+9,7,7,0,STS3045
+9,8,8,0,STS3235
+9,9,9,0,STS5420
+9,9,10,0,STS3095
+9,11,11,0,STS3250
+9,20,20,1,SCSXX-2
+9,15,15,1,SCS15-2
+9,25,25,1,SCS215-2
+9,35,35,1,SCS225
+9,40,40,1,SCS40-2
+9,46,46,1,SCS46-2
+9,41,41,1,SCS25-2
+10,1,1,0,HTS3235
+10,2,2,0,HTS3032
+10,3,3,0,HTS3240
+10,4,4,0,HTS3235
+10,5,5,0,STS3045BL
+10,6,6,0,STS3046BL
+10,7,7,0,HTS3032
+10,8,8,0,HTS3045
+10,10,10,0,HLS3606
+10,11,11,0,HLS3612
+10,12,12,0,HLS3620
+10,13,13,0,HLS3625
+10,14,14,0,HLS3640
+10,15,15,0,HLS3925
+10,16,16,0,HLS3930
+10,17,17,0,HLS3935
+10,18,18,0,HLS3950
+10,19,19,0,HLS3955
+10,20,20,0,HLS3915
+10,21,21,0,HLS3960
+10,9,9,0,STS3009BL
+10,25,25,0,STS3025BL
+[型号结束]
+
+-----------------------------------------------------------------
+主固件号,次固件号开始,次固件号结束,0/1
+地址,内存名,字节数,初值,方向位,EPROM/SRAM,r/rw/d,最小值,最大值
+
+SMSXX
+[内存]
+2,40,69,0
+0,Firmare Main Version,1, ,-1,EPROM,r,-1,-1
+1,Firmware Secondary Version,1, ,-1,EPROM,r,-1,-1
+3,Servo Main Version,1, ,-1,EPROM,d,-1,-1
+4,Servo Sub Version,1, ,-1,EPROM,d,-1,-1
+5,ID,1,0,-1,EPROM,rw,0,253
+6,Baud Rate,1,4,-1,EPROM,rw,0,11
+7,Return Delay Time,1,250,-1,EPROM,rw,0,254
+8,Status Return Level,1,1,-1,EPROM,rw,0,254
+9,Min Position Limit,2,0,15,EPROM,rw,-1,-1
+11,Max Position Limit,2,0,15,EPROM,rw,-1,-1
+13,Max Temperature limit,1,80,-1,EPROM,rw,0,100
+14,Max Input Voltage,1,140,-1,EPROM,rw,0,254
+15,Min Input Voltage,1,80,-1,EPROM,rw,0,254
+16,Max Torque Limit,2,1000,-1,EPROM,rw,0,1000
+18,Setting Byte,1,0,-1,EPROM,rw,0,254
+19,Protection Switch,1,37,-1,EPROM,rw,0,254
+20,LED Alarm Condition,1,37,-1,EPROM,rw,0,254
+21,Position P Gain,1,32,-1,EPROM,rw,0,254
+22,Position D Gain,1,0,-1,EPROM,rw,0,254
+23,Position I Gain,1,0,-1,EPROM,rw,0,254
+24,Punch,1,0,-1,EPROM,rw,0,254
+25,MAX I,1,0,-1,EPROM,rw,0,254
+26,CW Dead Band,1,0,-1,EPROM,rw,0,32
+27,CCW Dead Band,1,0,-1,EPROM,rw,0,32
+28,Overload Current,2,0,-1,EPROM,rw,0,511
+30,Angular Resolution,1,1,-1,EPROM,rw,1,3
+31,Position Offset Value,2,0,15,EPROM,rw,-2047,2047
+33,Work Mode,1,0,-1,EPROM,rw,0,3
+34,Protect Torque,1,40,-1,EPROM,rw,0,254
+35,Overload Protection Time,1,80,-1,EPROM,rw,0,254
+36,Overload Torque,1,80,-1,EPROM,rw,0,254
+37,Velocity P Gain,1,32,-1,EPROM,rw,0,254
+38,Overcurrent Protection Time,1,100,-1,EPROM,rw,0,254
+39,Velocity I Gain,1,0,-1,EPROM,rw,0,254
+40,Torque Enable,1,0,-1,SRAM,rw,0,254
+41,Goal Acceleration,1,0,-1,SRAM,rw,0,254
+42,Goal Position,2,0,15,SRAM,rw,-32766,32766
+44,Goal PWM,2,0,10,SRAM,rw,-32766,32766
+46,Goal Velocity,2,0,15,SRAM,rw,-32766,32766
+48,Torque Limit,2,1000,-1,SRAM,rw,0,1000
+55,Lock,1,1,-1,SRAM,rw,0,1
+56,Present Position,2,0,15,SRAM,r,-1,-1
+58,Present Velocity,2,0,15,SRAM,r,-1,-1
+60,Present PWM,2,0,10,SRAM,r,-1,-1
+62,Present Input Voltage,1,0,-1,SRAM,r,-1,-1
+63,Present Temperature,1,0,-1,SRAM,r,-1,-1
+64,Sync Write Flag,1,0,-1,SRAM,r,-1,-1
+65,Hardware Error Status,1,0,-1,SRAM,r,-1,-1
+66,Moving Status,1,0,-1,SRAM,r,-1,-1
+69,Present Current,2,0,15,SRAM,r,-1,-1
+80,Moving Threshold,1,1,-1,DEFAULT,d,0,254
+81,DTs(ms),1,20,-1,DEFAULT,d,0,254
+82,Vk(ms),1,20,-1,DEFAULT,d,1,254
+83,Hts(ns),1,0,-1,DEFAULT,d,0,254
+84,Vmax,1,5,-1,DEFAULT,d,0,254
+85,Amax,1,10,-1,DEFAULT,d,0,254
+86,KAcc,1,1,-1,DEFAULT,d,0,254
+NULL,NULL,NULL,NULL,NULL,NULL,NULL
+[内存结束]
+
+
+SCSXX
+[内存]
+0,0,39,1
+0,Firmare Main Version,1, ,-1,EPROM,r,-1,-1
+1,Firmware Secondary Version.,1, ,-1,EPROM,r,-1,-1
+3,Servo Main Version,1, ,-1,EPROM,r,-1,-1
+4,Servo Sub Version,1, ,-1,EPROM,d,-1,-1
+5,ID,1,0,-1,EPROM,rw,0,253
+6,Baud Rate,1,4,-1,EPROM,rw,0,10
+7,Reserved,1,250,-1,EPROM,rw,0,254
+8,Status Return Level,1,1,-1,EPROM,rw,0,1
+9,Min Position Limit,2,0,15,EPROM,rw,0,1023
+11,Max Position Limit,2,0,15,EPROM,rw,0,1023
+13,Max Temperature limit,1,80,-1,EPROM,rw,0,100
+14,Max Input Voltage,1,140,-1,EPROM,rw,0,254
+15,Min Input Voltage,1,80,-1,EPROM,rw,0,254
+16,Max Torque Limit,2,1000,-1,EPROM,rw,0,1000
+19,Protection Switch,1,37,-1,EPROM,rw,0,254
+20,LED Alarm Condition,1,37,-1,EPROM,rw,0,254
+21,Position P Gain,1,32,-1,EPROM,rw,0,254
+22,Position D Gain,1,0,-1,EPROM,rw,0,254
+23,Position I Gain,1,0,-1,EPROM,rw,0,254
+24,Punch,2,0,-1,EPROM,rw,0,1000
+26,CW Dead Band,1,2,-1,EPROM,rw,0,32
+27,CCW Dead Band,1,2,-1,EPROM,rw,0,32
+37,Protect Torque,1,40,-1,EPROM,rw,0,254
+38,Overload Protection Time,1,80,-1,EPROM,rw,0,254
+39,Overload Torque,1,80,-1,EPROM,rw,0,254
+40,Torque Enable,1,0,-1,SRAM,rw,0,2
+42,Goal Position,2,0,-1,SRAM,rw,0,1023
+44,Running Time,2,0,10,SRAM,rw,-32766,32766
+46,Goal Velocity,2,0,-1,SRAM,rw,0,32766
+48,Lock,1,1,-1,SRAM,rw,0,1
+56,Present Position,2,0,15,SRAM,r,-1,-1
+58,Present Velocity,2,0,15,SRAM,r,-1,-1
+60,Present PWM,2,0,10,SRAM,r,-1,-1
+62,Present Input Voltage,1,0,-1,SRAM,r,-1,-1
+63,Present Temperature,1,0,-1,SRAM,r,-1,-1
+64,Sync Write Flag,1,0,-1,SRAM,r,-1,-1
+65,Hardware Error Status,1,0,-1,SRAM,r,-1,-1
+66,Moving Status,1,0,-1,SRAM,r,-1,-1
+78,PWM Mode Acc,1,20,-1,DEFAULT,d,0,254
+79,Moving Threshold,1,1,-1,DEFAULT,d,0,254
+80,DTs(ms),1,20,-1,DEFAULT,d,0,254
+81,Vmin,1,1,-1,DEFAULT,d,0,254
+82,Vmax,1,5,-1,DEFAULT,d,0,254
+83,Amax,1,10,-1,DEFAULT,d,0,254
+NULL,NULL,NULL,NULL,NULL,NULL,NULL
+[内存结束]
+
+
+SMSXX
+[内存]
+1,0,19,0
+0,Firmare Main Version,1, ,-1,EPROM,r,-1,-1
+1,Firmware Secondary Version,1, ,-1,EPROM,r,-1,-1
+3,Servo Main Version,1, ,-1,EPROM,r,-1,-1
+4,Servo Sub Version,1, ,-1,EPROM,d,-1,-1
+5,ID,1,0,-1,EPROM,rw,0,253
+6,Baud Rate,1,4,-1,EPROM,rw,0,254
+7,Return Delay Time,1,250,-1,EPROM,rw,0,254
+8,Status Return Level,1,1,-1,EPROM,rw,0,1
+9,Min Position Limit,2,0,15,EPROM,rw,-1,-1
+11,Max Position Limit,2,0,15,EPROM,rw,-1,-1
+13,Max Temperature limit,1,80,-1,EPROM,rw,0,100
+14,Max Input Voltage,1,140,-1,EPROM,rw,0,254
+15,Min Input Voltage,1,80,-1,EPROM,rw,0,254
+16,Max Torque Limit,2,1000,-1,EPROM,rw,0,1000
+18,Setting Byte,1,0,-1,EPROM,rw,0,254
+19,Protection Switch,1,37,-1,EPROM,rw,0,254
+20,LED Alarm Condition,1,37,-1,EPROM,rw,0,254
+21,Position P Gain,1,32,-1,EPROM,rw,0,254
+22,Position D Gain,1,0,-1,EPROM,rw,0,254
+23,Position I Gain,1,0,-1,EPROM,rw,0,254
+24,Punch,2,0,-1,EPROM,rw,0,1000
+26,CW Dead Band,1,0,-1,EPROM,rw,0,32
+27,CCW Dead Band,1,0,-1,EPROM,rw,0,32
+28,Overload Current,2,0,-1,EPROM,rw,0,1023
+33,Position Offset Value,2,0,15,EPROM,rw,-2047,2047
+35,Work Mode,1,0,-1,EPROM,rw,0,2
+36,Overcurrent Protection Time,1,100,-1,EPROM,rw,0,254
+37,Protect Torque,1,40,-1,EPROM,rw,0,254
+38,Overload Protection Time,1,80,-1,EPROM,rw,0,254
+39,Overload Torque,1,80,-1,EPROM,rw,0,254
+40,Torque Enable,1,0,-1,SRAM,rw,0,254
+41,Goal Acceleration,1,0,-1,SRAM,rw,0,254
+42,Goal Position,2,0,-1,SRAM,rw,-32766,32766
+44,Goal PWM,2,0,10,SRAM,rw,-32766,32766
+46,Goal Velocity,2,0,15,SRAM,rw,0,32766
+48,Lock,1,1,-1,SRAM,rw,0,1
+56,Present Position,2,0,15,SRAM,r,-1,-1
+58,Present Velocity,2,0,15,SRAM,r,-1,-1
+60,Present PWM,2,0,10,SRAM,r,-1,-1
+62,Present Input Voltage,1,0,-1,SRAM,r,-1,-1
+63,Present Temperature,1,0,-1,SRAM,r,-1,-1
+64,Sync Write Flag,1,0,-1,SRAM,r,-1,-1
+65,Hardware Error Status,1,0,-1,SRAM,r,-1,-1
+66,Moving Status,1,0,-1,SRAM,r,-1,-1
+69,Present Current,2,0,15,SRAM,r,-1,-1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL
+[内存结束]
+
+
+STSXX
+[内存]
+3,0,39,0
+0,Firmare Main Version,1, ,-1,EPROM,r,-1,-1
+1,Firmware Secondary Version,1, ,-1,EPROM,r,-1,-1
+3,Servo Main Version,1, ,-1,EPROM,r,-1,-1
+4,Servo Sub Version,1, ,-1,EPROM,d,-1,-1
+5,ID,1,0,-1,EPROM,rw,0,253
+6,Baud Rate,1,4,-1,EPROM,rw,0,7
+7,Reserved,1,250,-1,EPROM,rw,0,254
+8,Status Return Level,1,1,-1,EPROM,rw,0,254
+9,Min Position Limit,2,0,15,EPROM,rw,-1,-1
+11,Max Position Limit,2,0,15,EPROM,rw,-1,-1
+13,Max Temperature limit,1,80,-1,EPROM,rw,0,100
+14,Max Input Voltage,1,140,-1,EPROM,rw,0,254
+15,Min Input Voltage,1,80,-1,EPROM,rw,0,254
+16,Max Torque Limit,2,1000,-1,EPROM,rw,0,1000
+18,Setting Byte,1,0,-1,EPROM,rw,0,254
+19,Protection Switch,1,37,-1,EPROM,rw,0,254
+20,LED Alarm Condition,1,37,-1,EPROM,rw,0,254
+21,Position P Gain,1,32,-1,EPROM,rw,0,254
+22,Position D Gain,1,0,-1,EPROM,rw,0,254
+23,Position I Gain,1,0,-1,EPROM,rw,0,254
+24,Punch,1,0,-1,EPROM,rw,0,254
+25,MAX I,1,0,-1,EPROM,rw,0,254
+26,CW Dead Band,1,0,-1,EPROM,rw,0,32
+27,CCW Dead Band,1,0,-1,EPROM,rw,0,32
+28,Overload Current,2,0,-1,EPROM,rw,0,511
+30,Angular Resolution,1,1,-1,EPROM,rw,1,3
+31,Position Offset Value,2,0,-1,EPROM,rw,0,8191
+33,Work Mode,1,0,-1,EPROM,rw,0,3
+34,Protect Torque,1,40,-1,EPROM,rw,0,254
+35,Overload Protection Time,1,80,-1,EPROM,rw,0,254
+36,Overload Torque,1,80,-1,EPROM,rw,0,254
+37,Velocity P Gain,1,32,-1,EPROM,rw,0,254
+38,Overcurrent Protection Time,1,100,-1,EPROM,rw,0,254
+39,Velocity I Gain,1,0,-1,EPROM,rw,0,254
+40,Torque Enable,1,0,-1,SRAM,rw,0,254
+41,Goal Acceleration,1,0,-1,SRAM,rw,0,254
+42,Goal Position,2,0,15,SRAM,rw,-32766,32766
+44,Goal PWM,2,0,10,SRAM,rw,-32766,32766
+46,Goal Velocity,2,0,15,SRAM,rw,-32766,32766
+48,Torque Limit,2,1000,-1,SRAM,rw,0,1000
+55,Lock,1,1,-1,SRAM,rw,0,1
+56,Present Position,2,0,15,SRAM,r,-1,-1
+58,Present Velocity,2,0,15,SRAM,r,-1,-1
+60,Present PWM,2,0,10,SRAM,r,-1,-1
+62,Present Input Voltage,1,0,-1,SRAM,r,-1,-1
+63,Present Temperature,1,0,-1,SRAM,r,-1,-1
+64,Sync Write Flag,1,0,-1,SRAM,r,-1,-1
+65,Hardware Error Status,1,0,-1,SRAM,r,-1,-1
+66,Moving Status,1,0,-1,SRAM,r,-1,-1
+69,Present Current,2,0,15,SRAM,r,-1,-1
+80,Moving Threshold,1,1,-1,DEFAULT,d,0,254
+81,DTs(ms),1,20,-1,DEFAULT,d,0,254
+82,Vk(ms),1,20,-1,DEFAULT,d,1,254
+83,Vmin,1,1,-1,DEFAULT,d,0,254
+84,Vmax,1,5,-1,DEFAULT,d,0,254
+85,Amax,1,10,-1,DEFAULT,d,0,254
+86,KAcc,1,1,-1,DEFAULT,d,0,254
+NULL,NULL,NULL,NULL,NULL,NULL,NULL
+[内存结束]
+
+
+HTSXX
+[内存]
+3,40,59,0
+0,Firmare Main Version,1, ,-1,EPROM,r,-1,-1
+1,Firmware Secondary Version,1, ,-1,EPROM,r,-1,-1
+3,Servo Main Version,1, ,-1,EPROM,r,-1,-1
+4,Servo Sub Version,1, ,-1,EPROM,d,-1,-1
+5,Main ID,1,0,-1,EPROM,rw,0,253
+6,Baud Rate,1,4,-1,EPROM,rw,0,7
+7,Second ID,1,0,-1,EPROM,rw,0,253
+8,Status Return Level,1,1,-1,EPROM,rw,0,1
+9,Min Position Limit,2,0,15,EPROM,rw,-1,-1
+11,Max Position Limit,2,0,15,EPROM,rw,-1,-1
+13,Max Temperature limit,1,80,-1,EPROM,rw,0,100
+14,Max Input Voltage,1,140,-1,EPROM,rw,0,254
+15,Min Input Voltage,1,80,-1,EPROM,rw,0,254
+16,Max Torque Limit,2,1000,-1,EPROM,rw,0,1000
+18,Setting Byte,1,0,-1,EPROM,rw,0,254
+19,Protection Switch,1,37,-1,EPROM,rw,0,254
+20,LED Alarm Condition,1,37,-1,EPROM,rw,0,254
+21,Position P Gain,1,32,-1,EPROM,rw,0,254
+22,Position D Gain,1,0,-1,EPROM,rw,0,254
+23,Position I Gain,1,0,-1,EPROM,rw,0,254
+24,Punch,1,0,-1,EPROM,rw,0,254
+25,MAX I,1,0,-1,EPROM,rw,0,254
+26,CW Dead Band,1,0,-1,EPROM,rw,0,32
+27,CCW Dead Band,1,0,-1,EPROM,rw,0,32
+28,Overload Current,2,0,-1,EPROM,rw,0,1023
+30,Angular Resolution,1,1,-1,EPROM,rw,1,128
+31,Position Offset Value,2,0,15,EPROM,rw,-4096,4095
+33,Work Mode,1,0,-1,EPROM,rw,0,4
+34,Current P Gain,1,32,-1,EPROM,rw,0,254
+35,Current I Gain,1,32,-1,EPROM,rw,0,254
+37,Velocity P Gain,1,32,-1,EPROM,rw,0,254
+38,Overcurrent Protection Time,1,100,-1,EPROM,rw,0,254
+39,Velocity I Gain,1,0,-1,EPROM,rw,0,254
+40,Torque Enable,1,0,-1,SRAM,rw,0,254
+41,Goal Acceleration,1,0,-1,SRAM,rw,0,254
+42,Goal Position,2,0,15,SRAM,rw,-32766,32766
+44,Goal PWM,2,0,15,SRAM,rw,-32766,32766
+46,Goal Velocity,2,0,15,SRAM,rw,-32766,32766
+48,Torque Limit,2,1000,10,SRAM,rw,0,1000
+50,Kp,1,0,-1,SRAM,rw,0,254
+51,Kd,1,0,-1,SRAM,rw,0,254
+52,Ki,1,0,-1,SRAM,rw,0,254
+53,Km,1,0,-1,SRAM,rw,0,1
+55,Lock,1,1,-1,SRAM,rw,0,1
+56,Present Position,2,0,15,SRAM,r,-1,-1
+58,Present Velocity,2,0,15,SRAM,r,-1,-1
+60,Present PWM,2,0,10,SRAM,r,-1,-1
+62,Present Input Voltage,1,0,-1,SRAM,r,-1,-1
+63,Present Temperature,1,0,-1,SRAM,r,-1,-1
+64,Sync Write Flag,1,0,-1,SRAM,r,-1,-1
+65,Hardware Error Status,1,0,-1,SRAM,r,-1,-1
+66,Moving Status,1,0,-1,SRAM,r,-1,-1
+69,Present Current,2,0,15,SRAM,r,-1,-1
+73,Eofs,2,0,15,SRAM,r,-1,-1
+77,vFk(*10),1,60,-1,DEFAULT,d,0,100
+78,vKgI,1,1,-1,DEFAULT,d,0,100
+79,pFk(*10),1,1,-1,DEFAULT,d,0,100
+80,Vmin,1,1,-1,DEFAULT,d,0,254
+81,DTs(ms),1,20,-1,DEFAULT,d,0,254
+82,eFk(*10),1,80,-1,DEFAULT,d,0,100
+83,Vk(ms),1,20,-1,DEFAULT,d,1,254
+84,Vmax,1,5,-1,DEFAULT,d,0,254
+85,Amax,1,10,-1,DEFAULT,d,0,254
+86,KAcc,1,1,-1,DEFAULT,d,0,254
+NULL,NULL,NULL,NULL,NULL,NULL,NULL
+[内存结束]
+
+
+SCSXX-2
+[内存]
+3,20,39,1
+0,Firmare Main Version,1, ,-1,EPROM,r,-1,-1
+1,Firmware Secondary Version,1, ,-1,EPROM,r,-1,-1
+3,Servo Main Version,1, ,-1,EPROM,r,-1,-1
+4,Servo Sub Version,1, ,-1,EPROM,d,-1,-1
+5,ID,1,0,-1,EPROM,rw,0,253
+6,Baud Rate,1,4,-1,EPROM,rw,0,7
+7,Reserved,1,250,-1,EPROM,rw,0,254
+8,Status Return Level,1,1,-1,EPROM,rw,0,1
+9,Min Position Limit,2,0,15,EPROM,rw,0,1023
+11,Max Position Limit,2,0,15,EPROM,rw,0,1023
+13,Max Temperature limit,1,80,-1,EPROM,rw,0,100
+14,Max Input Voltage,1,140,-1,EPROM,rw,0,254
+15,Min Input Voltage,1,80,-1,EPROM,rw,0,254
+16,Max Torque Limit,2,1000,-1,EPROM,rw,0,1000
+18,Setting Byte,1,0,-1,EPROM,rw,0,254
+19,Protection Switch,1,37,-1,EPROM,rw,0,254
+20,LED Alarm Condition,1,37,-1,EPROM,rw,0,254
+21,Position P Gain,1,32,-1,EPROM,rw,0,254
+22,Position D Gain,1,0,-1,EPROM,rw,0,254
+23,Position I Gain,1,0,-1,EPROM,rw,0,254
+24,Punch,2,0,-1,EPROM,rw,0,1000
+26,CW Dead Band,1,2,-1,EPROM,rw,0,32
+27,CCW Dead Band,1,2,-1,EPROM,rw,0,32
+31,Overcurrent Protection Time,1,100,-1,EPROM,rw,0,254
+32,Overload Current,2,0,-1,EPROM,rw,0,1023
+37,Protect Torque,1,40,-1,EPROM,rw,0,254
+38,Overload Protection Time,1,80,-1,EPROM,rw,0,254
+39,Overload Torque,1,80,-1,EPROM,rw,0,254
+40,Torque Enable,1,0,-1,SRAM,rw,0,2
+42,Goal Position,2,0,-1,SRAM,rw,0,1023
+44,Running Time,2,0,15,SRAM,rw,-32766,32766
+46,Goal Velocity,2,0,-1,SRAM,rw,0,32766
+48,Lock,1,1,-1,SRAM,rw,0,1
+56,Present Position,2,0,15,SRAM,r,-1,-1
+58,Present Velocity,2,0,15,SRAM,r,-1,-1
+60,Present PWM,2,0,10,SRAM,r,-1,-1
+62,Present Input Voltage,1,0,-1,SRAM,r,-1,-1
+63,Present Temperature,1,0,-1,SRAM,r,-1,-1
+64,Sync Write Flag,1,0,-1,SRAM,r,-1,-1
+65,Hardware Error Status,1,0,-1,SRAM,r,-1,-1
+66,Moving Status,1,0,-1,SRAM,r,-1,-1
+69,Present Current,2,0,15,SRAM,r,-1,-1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL
+[内存结束]
+
