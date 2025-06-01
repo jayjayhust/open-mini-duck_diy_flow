@@ -1,10 +1,8 @@
 # Open Mini Duck手搓
 
 ## 流程综述
- - [placo](https://github.com/Rhoban/placo)(Planning & Control)：生成步态相关参数
-	- 怎么生成？
-	- 哪些文件？
- - [Open Duck Reference Motion Generator](https://github.com/apirrone/Open_Duck_reference_motion_generator)：根据步态参数，生成polynomial_coefficients.pkl用于后续训练
+ - [placo](https://github.com/Rhoban/placo)(PlaCo is Rhoban's planning and control library)：生成步态相关参数的库
+ - [Open Duck Reference Motion Generator](https://github.com/apirrone/Open_Duck_reference_motion_generator)：利用步态参数生成的库placo，生成polynomial_coefficients.pkl用于后续训练
 	- Generate motions（This will write in a directory called `recordings/`）
 	```bash
 	uv run scripts/auto_waddle.py (-j?) --duck ["go_bdx", "open_duck_mini", "open_duck_mini_v2"] (--num <> / --sweep) --output_dir <>
