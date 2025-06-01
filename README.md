@@ -7,7 +7,8 @@
 	```bash
 	uv run scripts/auto_waddle.py (-j?) --duck ["go_bdx", "open_duck_mini", "open_duck_mini_v2"] (--num <> / --sweep) --output_dir <>
 	```
-	从`auto_waddle.py`源码中看到加载的参数文件和文件夹有`/open_duck_reference_motion_generator/robots/{args.duck}/auto_gait.json`和`/open_duck_reference_motion_generator/robots/{args.duck}/placo_presets`
+		- 从`auto_waddle.py`源码中看到加载的参数文件和文件夹有`/open_duck_reference_motion_generator/robots/{args.duck}/auto_gait.json`和`/open_duck_reference_motion_generator/robots/{args.duck}/placo_presets`
+		- 从`auto_waddle.py`源码中看到有调用`/open_duck_reference_motion_generator/gait_generator.py`去生成步态数据
 	- Fit polynomials（This will generate `polynomial_coefficients.pkl` from data in `recordings/`）
 	```
 	uv run scripts/fit_poly.py --ref_motion recordings/
