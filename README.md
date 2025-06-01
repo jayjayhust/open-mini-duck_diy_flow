@@ -8,4 +8,5 @@
 	```
 	uv run playground/open_duck_mini_v2/mujoco_infer.py -o <path_to_.onnx> (-k)
 	```
+	- 最新的onnx模型[latest policy checkpoint](https://github.com/apirrone/Open_Duck_Mini/blob/v2/BEST_WALK_ONNX_2.onnx)
  - [Open Duck Mini Runtime](https://github.com/apirrone/Open_Duck_Mini_Runtime)：加载onnx模型，实物运行
