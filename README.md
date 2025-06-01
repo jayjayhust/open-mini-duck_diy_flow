@@ -4,7 +4,7 @@
  - [placo](https://github.com/Rhoban/placo)(Planning & Control)：生成步态
  - [Open Duck Reference Motion Generator](https://github.com/apirrone/Open_Duck_reference_motion_generator)：生成polynomial_coefficients.pkl用于后续训练
 	- Generate motions（This will write in a directory called `recordings/`）
-	```
+	```bash
 	uv run scripts/auto_waddle.py (-j?) --duck ["go_bdx", "open_duck_mini", "open_duck_mini_v2"] (--num <> / --sweep) --output_dir <>
 	```
 	- Fit polynomials（This will generate `polynomial_coefficients.pkl` from data in `recordings/`）
