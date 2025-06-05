@@ -1,8 +1,10 @@
 # Open Mini Duck手搓
 
 ## 流程综述
-- [placo](https://github.com/Rhoban/placo)(PlaCo is Rhoban's planning and control library)：生成步态相关参数的库
-- [Open Duck Reference Motion Generator](https://github.com/apirrone/Open_Duck_reference_motion_generator)：利用步态参数生成的库placo，生成polynomial_coefficients.pkl用于后续训练
+
+### [placo](https://github.com/Rhoban/placo)(PlaCo is Rhoban's planning and control library)：生成步态相关参数的库
+
+### [Open Duck Reference Motion Generator](https://github.com/apirrone/Open_Duck_reference_motion_generator)：利用步态参数生成的库placo，生成polynomial_coefficients.pkl用于后续训练
   - Generate motions（This will write in a directory called `recordings/`）
   ```bash
   uv run scripts/auto_waddle.py (-j?) --duck ["go_bdx", "open_duck_mini", "open_duck_mini_v2"] (--num <> / --sweep) --output_dir <>
@@ -17,24 +19,22 @@
   ```
   uv run scripts/fit_poly.py --ref_motion recordings/
   ```
-- [Open Duck Playground](https://github.com/apirrone/Open_Duck_Playground)：训练和输出onnx模型（这一步是强化学习的关键步骤）
+### [Open Duck Playground](https://github.com/apirrone/Open_Duck_Playground)：训练和输出onnx模型（这一步是强化学习的关键步骤）
   - 在mujoco里跑onnx模型（即查看onnx模型）
   ```
   uv run playground/open_duck_mini_v2/mujoco_infer.py -o <path_to_.onnx> (-k)
   ```
   - 最新的onnx模型：[latest policy checkpoint](https://github.com/apirrone/Open_Duck_Mini/blob/v2/BEST_WALK_ONNX_2.onnx)
   - Adding a new robot and do the training-config process
-  
-  Create a new directory in `playground` named after `<your robot>`. You can copy the `open_duck_mini_v2` directory as a starting point.
+	- Create a new directory in `playground` named after `<your robot>`. You can copy the `open_duck_mini_v2` directory as a starting point.
+	- Edit `base.py`: Mainly renaming stuff to match you robot's name
+	- Edit `constants.py`: specify the names of some important geoms, sensors etc
+		- In your `mjcf`, you'll probably have to add some sites, name some bodies/geoms and add the sensors. Look at how we did it for `open_duck_mini_v2`
+	- Add your `mjcf` assets in `xmls`. 
+	- Edit `joystick.py` : to choose the rewards you are interested in
+		- Note: for now there is still some hard coded values etc. We'll improve things on the way
+	- Edit `runner.py`
 
-  You will need to:
-  - Edit `base.py`: Mainly renaming stuff to match you robot's name
-  - Edit `constants.py`: specify the names of some important geoms, sensors etc
-    - In your `mjcf`, you'll probably have to add some sites, name some bodies/geoms and add the sensors. Look at how we did it for `open_duck_mini_v2`
-  - Add your `mjcf` assets in `xmls`. 
-  - Edit `joystick.py` : to choose the rewards you are interested in
-    - Note: for now there is still some hard coded values etc. We'll improve things on the way
-  - Edit `runner.py`
-- [Open Duck Mini Runtime](https://github.com/apirrone/Open_Duck_Mini_Runtime)：加载onnx模型，实物运行
+### [Open Duck Mini Runtime](https://github.com/apirrone/Open_Duck_Mini_Runtime)：加载onnx模型，实物运行
   - onnx模型的实物加载使用：[Run the walk](https://github.com/apirrone/Open_Duck_Mini_Runtime?tab=readme-ov-file#run-the-walk-)
 	
