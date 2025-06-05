@@ -36,4 +36,18 @@
   - 最新的onnx模型：[latest policy checkpoint](https://github.com/apirrone/Open_Duck_Mini/blob/v2/BEST_WALK_ONNX_2.onnx)
 ### [Open Duck Mini Runtime](https://github.com/apirrone/Open_Duck_Mini_Runtime)：加载onnx模型，实物运行
   - onnx模型的实物加载使用：[Run the walk](https://github.com/apirrone/Open_Duck_Mini_Runtime?tab=readme-ov-file#run-the-walk-)
+  - hardware
+	- Raspberry Pi zero 2W
+	- IMU: BNO055
+	- Motor: Feetech 7.4v STS 3215
+	- Charger: 2S2A(8.4V, 2A)
+	  - 输入电压：DC 3-6V（推荐DC 3.7V 5V）
+	  - 输入电流：1A（1A版）；2A（2A版）；4A（4A版）
+	  - 充电电压：8.4V
+	  - 充电电流：0.55A（1A版）；1.1A（2A版）；2.2A（4A版）
+	- BMS: 7.4V(output)
+	  - When charger is connected on P+/P- port( and power switch is off), it's for battery charging
+	  - When charger is disconnected and power switch is on, it's for power output
+	- Battery: 18650 x 2
+  - OS: Raspberry Pi OS Lite (64-bit)
 	
