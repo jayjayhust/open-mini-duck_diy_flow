@@ -51,12 +51,13 @@
 	- Battery: 18650 x 2
   - OS: Raspberry Pi OS Lite (64-bit)
 
-## Windows 10 WSL2方式安装ROS2 Humble和gazebo
+## Windows 10 WSL2方式安装ROS2 Humble和gazebo(下一步再mujoco)
   - 硬件资源：RTX 5070ti 16G(Driver version: )
   - 软件环境：
     - 操作系统：Windows 10
 	- WSL2安装的ubuntu系统：Ubuntu 22.04.5
 	- ROS2 Humble版本：小鱼ROS
+	- gazebo版本：Gazebo Classic Simulator (ROS2 Humble)，注意不是更新的Gazebo Harmonic Simulator (ROS2 Jazzy&Humble)版本
   - 各步骤参考：
     - [windows10 子系统Ubuntu环境安装 ROS2 humble](https://zhuanlan.zhihu.com/p/1897947859778769074)
 	
@@ -65,5 +66,6 @@
 	wget http://fishros.com/install -O fishros && . fishros
 	```
 	- [WSL2的安装与配置（创建Anaconda虚拟环境、更新软件包、安装PyTorch、VSCode）](https://blog.csdn.net/weixin_44878336/article/details/133967607)
+	- [Ubuntu 22.04（WSL2）安装Miniconda详细指南](https://juejin.cn/post/7503461855890931722)
 	- [基于WSL2 & ROS2 humble上安装gazebo及调试](http://lvkedu.com.cn/detail/89)
 	- [如何更改wsl2中的ubuntu默认安装位置](https://blog.csdn.net/luohaitao/article/details/147117915?fromshare=blogdetail&sharetype=blogdetail&sharerId=147117915&sharerefer=PC&sharesource=&sharefrom=from_link)
