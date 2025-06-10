@@ -59,6 +59,7 @@
 	- ROS2 Humble版本：小鱼ROS
   - 各步骤参考：
     - [windows10 子系统Ubuntu环境安装 ROS2 humble](https://zhuanlan.zhihu.com/p/1897947859778769074)
+	
 	有条脚本要修订下：
 	```bash
 	wget http://fishros.com/install -O fishros && . fishros
