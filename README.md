@@ -51,7 +51,7 @@
 	- Battery: 18650 x 2
   - OS: Raspberry Pi OS Lite (64-bit)
 
-## Windows 10 WSL2方式安装ROS2 Humble和gazebo(下一步再mujoco)
+## Windows 10 WSL2方式安装ROS2 Humble和gazebo、mujoco
   - 硬件资源：RTX 5070ti 16G(NVIDIA-SMI：575.57.04，Driver version: 576.52，CUDA Version：12.9)
   - 软件环境：
     - 操作系统：Windows 10
@@ -69,3 +69,5 @@
 	- [Ubuntu 22.04（WSL2）安装Miniconda详细指南](https://juejin.cn/post/7503461855890931722)
 	- [基于WSL2 & ROS2 humble上安装gazebo及调试](http://lvkedu.com.cn/detail/89)
 	- [如何更改wsl2中的ubuntu默认安装位置](https://blog.csdn.net/luohaitao/article/details/147117915?fromshare=blogdetail&sharetype=blogdetail&sharerId=147117915&sharerefer=PC&sharesource=&sharefrom=from_link)
+	- [mujoco](https://github.com/google-deepmind/mujoco)
+	- [mujoco windows](https://mujoco.readthedocs.io/en/latest/programming/#getting-started)：直接运行windows版本的mujoco文件夹下/bin文件夹下的simulate.exe即可
