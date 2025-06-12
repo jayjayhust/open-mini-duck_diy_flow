@@ -52,7 +52,7 @@
   - OS: Raspberry Pi OS Lite (64-bit)
 
 ## Windows 10 WSL2方式安装ROS2 Humble和gazebo(下一步再mujoco)
-  - 硬件资源：RTX 5070ti 16G(Driver version: )
+  - 硬件资源：RTX 5070ti 16G(NVIDIA-SMI：575.57.04，Driver version: 576.52，CUDA Version：12.9)
   - 软件环境：
     - 操作系统：Windows 10
 	- WSL2安装的ubuntu系统：Ubuntu 22.04.5
