@@ -51,13 +51,15 @@
 	- Battery: 18650 x 2
   - OS: Raspberry Pi OS Lite (64-bit)
 
-## Windows 10 WSL2方式安装ROS2 Humble和gazebo、mujoco
+## Windows 10 WSL2方式安装ROS2 Humble和gazebo(mujoco可以在windows直接安装)
   - 硬件资源：RTX 5070ti 16G(NVIDIA-SMI：575.57.04，Driver version: 576.52，CUDA Version：12.9)
   - 软件环境：
     - 操作系统：Windows 10
 	- WSL2安装的ubuntu系统：Ubuntu 22.04.5
 	- ROS2 Humble版本：小鱼ROS
 	- gazebo版本：Gazebo Classic Simulator (ROS2 Humble)，注意不是更新的Gazebo Harmonic Simulator (ROS2 Jazzy&Humble)版本
+	- mujoco版本：3.3.3
+	- Issac Sim及对应的Isaac Sim Assets版本：4.5.0
   - 各步骤参考：
     - [windows10 子系统Ubuntu环境安装 ROS2 humble](https://zhuanlan.zhihu.com/p/1897947859778769074)
 	
@@ -71,3 +73,4 @@
 	- [如何更改wsl2中的ubuntu默认安装位置](https://blog.csdn.net/luohaitao/article/details/147117915?fromshare=blogdetail&sharetype=blogdetail&sharerId=147117915&sharerefer=PC&sharesource=&sharefrom=from_link)
 	- [mujoco](https://github.com/google-deepmind/mujoco)
 	- [mujoco windows](https://mujoco.readthedocs.io/en/latest/programming/#getting-started)：直接运行windows版本的mujoco文件夹下/bin文件夹下的simulate.exe即可
+	- [Issac Sim下载、安装和启动](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/download.html)：下载Isaac Sim包和关联资产包并设置后，解压直接运行Isaac Sim包下的isaac-sim.selector.bat
