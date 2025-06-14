@@ -37,11 +37,13 @@
   - RL stuff
     - Mujoco Playground
 
-https://github.com/user-attachments/assets/037a1790-7ac1-4140-b154-2c901d20d5f5
+https://github.com/user-attachments/assets/ec04dde1-7c8b-477b-8bd8-60975ffa1930
+
     - Reference motion generation for imitation learning 
 
-https://github.com/user-attachments/assets/4cb52e17-99a5-47a8-b841-4141596b7afb
-	- Actuator identification: We used Rhoban's [BAM](https://github.com/Rhoban/bam)
+https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
+
+    - Actuator identification: We used Rhoban's [BAM](https://github.com/Rhoban/bam)
 ### [Open Duck Mini Runtime](https://github.com/apirrone/Open_Duck_Mini_Runtime)：加载onnx模型，实物运行
   - onnx模型的实物加载使用：[Run the walk](https://github.com/apirrone/Open_Duck_Mini_Runtime?tab=readme-ov-file#run-the-walk-)
   - hardware
