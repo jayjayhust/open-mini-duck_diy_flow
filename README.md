@@ -28,7 +28,10 @@
 	- Add your `mjcf` assets in `xmls`. 
 	- Edit `joystick.py` : to choose the rewards you are interested in
 		- Note: for now there is still some hard coded values etc. We'll improve things on the way
-	- Edit `runner.py` and then run it
+	- Edit `runner.py` and then run it(mujoco will be lauched automatically?)
+	```bash
+	uv run playground/<robot>/runner.py 
+	```
   - 在mujoco里跑onnx模型（即查看onnx模型）
   ```
   uv run playground/open_duck_mini_v2/mujoco_infer.py -o <path_to_.onnx> (-k)
