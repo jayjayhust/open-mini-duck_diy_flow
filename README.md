@@ -74,3 +74,11 @@
 	- [mujoco](https://github.com/google-deepmind/mujoco)
 	- [mujoco windows](https://mujoco.readthedocs.io/en/latest/programming/#getting-started)：直接运行windows版本的mujoco文件夹下/bin文件夹下的simulate.exe即可
 	- [Issac Sim下载、安装和启动](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/download.html)：下载Isaac Sim包和关联资产包并设置后，解压直接运行Isaac Sim包下的isaac-sim.selector.bat
+	
+## 其他
+  - Issac Sim导入urdf
+    - [视频教程](https://www.youtube.com/watch?v=AMfEtZ4hyLY)
+	- [含urdf文件的示例项目：SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
+
+## Issues记录
+  - Issac Sim导入open mini duck的urdf时，报accessed invalid null prim（未解决）
