@@ -36,11 +36,12 @@
   - 最新的onnx模型：[latest policy checkpoint](https://github.com/apirrone/Open_Duck_Mini/blob/v2/BEST_WALK_ONNX_2.onnx)
   - RL stuff
     - Mujoco Playground
-	https://github.com/user-attachments/assets/037a1790-7ac1-4140-b154-2c901d20d5f5
+
+https://github.com/user-attachments/assets/037a1790-7ac1-4140-b154-2c901d20d5f5
     - Reference motion generation for imitation learning 
-    https://github.com/user-attachments/assets/4cb52e17-99a5-47a8-b841-4141596b7afb
-	- Actuator identification
-	We used Rhoban's [BAM](https://github.com/Rhoban/bam)
+
+https://github.com/user-attachments/assets/4cb52e17-99a5-47a8-b841-4141596b7afb
+	- Actuator identification: We used Rhoban's [BAM](https://github.com/Rhoban/bam)
 ### [Open Duck Mini Runtime](https://github.com/apirrone/Open_Duck_Mini_Runtime)：加载onnx模型，实物运行
   - onnx模型的实物加载使用：[Run the walk](https://github.com/apirrone/Open_Duck_Mini_Runtime?tab=readme-ov-file#run-the-walk-)
   - hardware
