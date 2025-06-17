@@ -107,8 +107,7 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
 ## Ubuntu 22.04.5安装Isaac Sim 4.5.0
   - 硬件资源：RTX 5070ti 16G(NVIDIA-SMI：570.153.02，Driver version: 570.153.02，CUDA Version：12.8)
   - 软件环境：
-    - 操作系统：Ubuntu 22.04.5
-	- WSL2安装的ubuntu系统：Ubuntu 22.04.5
+    - 操作系统：Ubuntu 22.04.5 desktop
 	- ROS2 Humble版本：小鱼ROS
 	- gazebo版本：Gazebo Classic Simulator (ROS2 Humble)，注意不是更新的Gazebo Harmonic Simulator (ROS2 Jazzy&Humble)版本
 	- mujoco版本：3.3.3
