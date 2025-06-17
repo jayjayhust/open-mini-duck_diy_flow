@@ -114,6 +114,7 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
     - [robot project: OpenTinker-V2](https://github.com/golaced/OmniBotSeries-Tinker)
       - [开源双足机器人OpenTinker-V2，手把手制作迪士尼BDX入门强化学习！](https://www.bilibili.com/video/BV1FRZoY1ExW/?spm_id_from=333.1387.homepage.video_card.click)
       - [feishu document](https://hcn64ij2s2xr.feishu.cn/wiki/AZJxwlvEpiWnRrkeBbGc21U9n7f)
+      - [error: undefined symbol: iJIT_NotifyEvent --- downgrade the mkl](https://blog.csdn.net/mr_hore/article/details/138961434): `pip install mkl=2024.0`
 
 ## Issues记录
   - Issac Sim导入open mini duck的urdf时，报accessed invalid null prim（未解决）
