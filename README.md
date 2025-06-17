@@ -30,6 +30,22 @@
 		- Note: for now there is still some hard coded values etc. We'll improve things on the way
 	- Edit `runner.py` and then run it(mujoco will be lauched automatically?)
 	```bash
+	# in Windows(unsuccessful)
+	pip install uv
+	uv venv -p 3.12
+	uv run playground/<robot>/runner.py #这一步还是会报You're on Windows (`win_amd64`), but `jax-cuda12-plugin` (v0.6.1) only has wheels for the following platforms: `manylinux2014_aarch64`, `manylinux2014_x86_64`; consider adding your platform to `tool.uv.required-environments` to ensure uv resolves to a version with compatible wheels
+	
+	# wsl2(ubuntu 22.04.5)
+	conda env list
+	conda create -n mujoco python=3.11
+	conda activate mujoco
+	pip install mujoco -i https://mirrors.aliyun.com/pypi/simple/
+	git clone https://github.com/apirrone/Open_Duck_Playground.git
+	cd Open_Duck_Playground
+	curl -LsSf https://astral.sh/uv/install.sh | sh
+	uv run playground/open_duck_mini_v2/runner.py
+	
+	# in linux(suppose to be ok)
 	uv run playground/<robot>/runner.py 
 	```
   - 在mujoco里跑onnx模型（即查看onnx模型）
@@ -95,3 +111,6 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
 
 ## Issues记录
   - Issac Sim导入open mini duck的urdf时，报accessed invalid null prim（未解决）
+  - playground运行runner报错：jaxlib._jax.XlaRuntimeError：[已解决，更改pyproject.toml中nvidia-cublas-cu12的版本](https://github.com/apirrone/Open_Duck_Playground/issues/15#issuecomment-2945798975)
+  - playground运行runner下载包超时：[已解决，设置clash的tun模式，见链接的评论区](https://zhuanlan.zhihu.com/p/153124468)
+  - playground运行runner报错：'cuModuleLoadData(&module, data)' failed with 'CUDA_ERROR_INVALID_PTX'（未解决，[链接1](https://github.com/tensorflow/tensorflow/issues/90291)[链接2](https://github.com/tensorflow/tensorflow/issues/89272)）
