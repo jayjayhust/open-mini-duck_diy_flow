@@ -113,4 +113,4 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
   - Issac Sim导入open mini duck的urdf时，报accessed invalid null prim（未解决）
   - playground运行runner报错：jaxlib._jax.XlaRuntimeError：[已解决，更改pyproject.toml中nvidia-cublas-cu12的版本](https://github.com/apirrone/Open_Duck_Playground/issues/15#issuecomment-2945798975)
   - playground运行runner下载包超时：[已解决，设置clash的tun模式，见链接的评论区](https://zhuanlan.zhihu.com/p/153124468)
-  - playground运行runner报错：'cuModuleLoadData(&module, data)' failed with 'CUDA_ERROR_INVALID_PTX'（未解决，[链接1](https://github.com/tensorflow/tensorflow/issues/90291)[链接2](https://github.com/tensorflow/tensorflow/issues/89272)）
+  - playground运行runner报错：'cuModuleLoadData(&module, data)' failed with 'CUDA_ERROR_INVALID_PTX'（未解决，[链接1](https://github.com/tensorflow/tensorflow/issues/90291) [链接2](https://github.com/tensorflow/tensorflow/issues/89272)）
