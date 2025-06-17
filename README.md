@@ -103,7 +103,17 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
 	- [mujoco](https://github.com/google-deepmind/mujoco)
 	- [mujoco windows](https://mujoco.readthedocs.io/en/latest/programming/#getting-started)：直接运行windows版本的mujoco文件夹下/bin文件夹下的simulate.exe即可
 	- [Issac Sim下载、安装和启动](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/download.html)：下载Isaac Sim包和关联资产包并设置后，解压直接运行Isaac Sim包下的isaac-sim.selector.bat
-	
+
+## Ubuntu 22.04.5安装Isaac Sim 4.5.0
+  - 硬件资源：RTX 5070ti 16G(NVIDIA-SMI：570.153.02，Driver version: 570.153.02，CUDA Version：12.8)
+  - 软件环境：
+    - 操作系统：Ubuntu 22.04.5
+	- WSL2安装的ubuntu系统：Ubuntu 22.04.5
+	- ROS2 Humble版本：小鱼ROS
+	- gazebo版本：Gazebo Classic Simulator (ROS2 Humble)，注意不是更新的Gazebo Harmonic Simulator (ROS2 Jazzy&Humble)版本
+	- mujoco版本：3.3.3
+	- Issac Sim及对应的Isaac Sim Assets版本：4.5.0
+ 
 ## 其他
   - Issac Sim导入urdf
     - [视频教程](https://www.youtube.com/watch?v=AMfEtZ4hyLY)
