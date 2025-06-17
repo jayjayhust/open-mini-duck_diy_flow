@@ -113,6 +113,7 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
       - [python joint_monkey.py缺少libpython3.7m.so.1.0库](https://blog.csdn.net/weixin_45392674/article/details/126300556): `export LD_LIBRARY_PATH=/home/jay/miniconda3/envs/rlgpu/lib`
     - [robot project: OpenTinker-V2](https://github.com/golaced/OmniBotSeries-Tinker)
       - [开源双足机器人OpenTinker-V2，手把手制作迪士尼BDX入门强化学习！](https://www.bilibili.com/video/BV1FRZoY1ExW/?spm_id_from=333.1387.homepage.video_card.click)
+      - [feishu document](https://hcn64ij2s2xr.feishu.cn/wiki/AZJxwlvEpiWnRrkeBbGc21U9n7f)
 
 ## Issues记录
   - Issac Sim导入open mini duck的urdf时，报accessed invalid null prim（未解决）
