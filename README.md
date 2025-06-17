@@ -108,6 +108,9 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
   - Issac Sim导入urdf
     - [视频教程](https://www.youtube.com/watch?v=AMfEtZ4hyLY)
 	- [含urdf文件的示例项目：SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
+  - Isaac Gym(RL)
+    - [Installation](file:///home/jay/workspace/IsaacGym_Preview_4_Package/isaacgym/docs/install.html)
+      - [python joint_monkey.py缺少libpython3.7m.so.1.0库](https://blog.csdn.net/weixin_45392674/article/details/126300556): `export LD_LIBRARY_PATH=/home/jay/miniconda3/envs/rlgpu/lib`
 
 ## Issues记录
   - Issac Sim导入open mini duck的urdf时，报accessed invalid null prim（未解决）
