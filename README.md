@@ -112,6 +112,8 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
 	- gazebo版本：Gazebo Classic Simulator (ROS2 Humble)，注意不是更新的Gazebo Harmonic Simulator (ROS2 Jazzy&Humble)版本
 	- mujoco版本：3.3.3
 	- Issac Sim及对应的Isaac Sim Assets版本：4.5.0
+  - issues:
+    - [GUI blur](https://forums.developer.nvidia.com/t/the-isaac-sim-gui-is-blurry/327759/11): need to wait for the upgration of isaac sim (kit version should upper than 106.5.3)
  
 ## 其他
   - Issac Sim导入urdf
