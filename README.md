@@ -104,14 +104,15 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
 	- [mujoco windows](https://mujoco.readthedocs.io/en/latest/programming/#getting-started)：直接运行windows版本的mujoco文件夹下/bin文件夹下的simulate.exe即可
 	- [Issac Sim下载、安装和启动](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/download.html)：下载Isaac Sim包和关联资产包并设置后，解压直接运行Isaac Sim包下的isaac-sim.selector.bat
 
-## Ubuntu 22.04.5安装Isaac Sim 4.5.0
+## Ubuntu 22.04.5安装Isaac Sim 4.5.0(直接上Isaac Sim 4.5 + Isaac Lab 2.0)
   - 硬件资源：RTX 5070ti 16G(NVIDIA-SMI：570.153.02，Driver version: 570.153.02，CUDA Version：12.8)
   - 软件环境：
     - 操作系统：Ubuntu 22.04.5 desktop
 	- ROS2 Humble版本：小鱼ROS
 	- gazebo版本：Gazebo Classic Simulator (ROS2 Humble)，注意不是更新的Gazebo Harmonic Simulator (ROS2 Jazzy&Humble)版本
 	- mujoco版本：3.3.3
-	- Issac Sim及对应的Isaac Sim Assets版本：4.5.0
+	- Issac Sim及对应的Isaac Sim Assets版本：5.0
+        - Isaac Lab版本：2.2
   - issues:
     - [GUI blur](https://forums.developer.nvidia.com/t/the-isaac-sim-gui-is-blurry/327759/11): Need to wait for the upgration of isaac sim (kit version should upper than 106.5.3, you can see the kit version in 'help'->'about'). You can try to upgrade issac sim from 4.5.0 to 5.0(not release the production version yet, you can build from github repository)?
  
