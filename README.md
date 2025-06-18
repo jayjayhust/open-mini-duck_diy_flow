@@ -111,8 +111,8 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
 	- ROS2 Humble版本：小鱼ROS
 	- gazebo版本：Gazebo Classic Simulator (ROS2 Humble)，注意不是更新的Gazebo Harmonic Simulator (ROS2 Jazzy&Humble)版本
 	- mujoco版本：3.3.3
-	- Issac Sim及对应的Isaac Sim Assets版本：5.0
-        - Isaac Lab版本：2.2
+	- Issac Sim及对应的Isaac Sim Assets版本：[5.0](https://github.com/isaac-sim/IsaacSim?tab=readme-ov-file#quick-start)
+        - Isaac Lab版本：[2.2](https://github.com/isaac-sim/IsaacLab/tree/feature/isaacsim_5_0?tab=readme-ov-file)
   - issues:
     - [GUI blur](https://forums.developer.nvidia.com/t/the-isaac-sim-gui-is-blurry/327759/11): Need to wait for the upgration of isaac sim (kit version should upper than 106.5.3, you can see the kit version in 'help'->'about'). You can try to upgrade issac sim from 4.5.0 to 5.0(not release the production version yet, you can build from github repository)?
  
