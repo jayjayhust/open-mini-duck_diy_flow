@@ -128,7 +128,8 @@ ros2 run demo_nodes_py listener
 
 # ros2 isaac sim workspace init(https://github.com/isaac-sim/IsaacSim-ros_workspaces)
 source /opt/ros/humble/setup.bash
-#cd repository/humble_ws
+#cd repository/humble_ws, for example: ~/IsaacSim-ros_workspaces/humble_ws
+cd ~/IsaacSim-ros_workspaces/humble_ws
 source install/local_setup.bash
 # cd the h1_fullbody_controller ROS2 package and then run the ROS2 policy
 ~/IsaacSim-ros_workspaces/humble_ws/src/humanoid_locomotion_policy_example/h1_fullbody_controller/launch
