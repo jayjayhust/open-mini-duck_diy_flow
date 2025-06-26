@@ -115,6 +115,9 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
         - Isaac Lab版本：[2.2](https://github.com/isaac-sim/IsaacLab/tree/feature/isaacsim_5_0?tab=readme-ov-file)
   - issues:
     - [GUI blur](https://forums.developer.nvidia.com/t/the-isaac-sim-gui-is-blurry/327759/11): Need to wait for the upgration of isaac sim (kit version should upper than 106.5.3, you can see the kit version in 'help'->'about'). You can try to upgrade issac sim from 4.5.0 to 5.0(not release the production version yet, you can build from github repository)?
+    - [saac Sim ROS Workspace](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/installation/install_ros.html#enabling-rclpy-custom-ros-2-packages-and-workspaces-with-python-3-11)
+      - 先安装python 3.11
+      - 执行`./build_ros.sh -d humble -v 22.04`可能下载有些包失败，直接修改对应的dockerfile（例如dockerfiles/ubuntu_22_humble_python_311_minimal.dockerfile），把python镜像源加入相应失败的下载指令后
   - [脚本记录(Isaac Sim和ROS2互相通讯，用h1跑强化学习policy)](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/ros2_tutorials/tutorial_ros2_rl_controller.html#)：
   ```
 # ros2 cmd init
