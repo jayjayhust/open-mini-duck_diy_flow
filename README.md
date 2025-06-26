@@ -144,7 +144,7 @@ ros2 launch h1_fullbody_controller h1_fullbody_controller.launch.py # run the RO
     - [视频教程1](https://www.youtube.com/watch?v=AMfEtZ4hyLY)
       - [含urdf文件的示例项目：SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
     - [视频教程2](https://www.youtube.com/watch?v=Ym5jav5scfA)
-      - [Joint Physics: Computing Stiffness and Damping in URDF Importers](https://lycheeai-hub.com/project-so-arm101-x-isaac-sim-x-isaac-lab-tutorial-series/so-arm-import-urdf-to-isaac-sim)
+      - [Joint Physics: Computing Stiffness and Damping in URDF Importers](https://lycheeai-hub.com/project-so-arm101-x-isaac-sim-x-isaac-lab-tutorial-series/so-arm-import-urdf-to-isaac-sim)：带多个教程集锦，例如解释urdf导入时的刚度和阻尼参数含义。
   - Isaac Gym(RL)
     - [Installation](file:///home/jay/workspace/IsaacGym_Preview_4_Package/isaacgym/docs/install.html)
       - [python joint_monkey.py缺少libpython3.7m.so.1.0库](https://blog.csdn.net/weixin_45392674/article/details/126300556): `export LD_LIBRARY_PATH=/home/jay/miniconda3/envs/rlgpu/lib`
