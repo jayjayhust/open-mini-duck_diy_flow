@@ -118,6 +118,7 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
     - [saac Sim ROS Workspace](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/installation/install_ros.html#enabling-rclpy-custom-ros-2-packages-and-workspaces-with-python-3-11)
       - 先安装python 3.11
       - 执行`./build_ros.sh -d humble -v 22.04`可能下载有些包失败，直接修改对应的dockerfile（例如dockerfiles/ubuntu_22_humble_python_311_minimal.dockerfile），把python镜像源加入相应失败的下载指令后
+    - [ROS on Ubuntu 20.04, No module named 'rclpy._rclpy_pybind11'](https://6fingers.me/ros-on-ubuntu-20-04-no-module-named-rclpy-_rclpy_pybind11)：切换默认的python的版本
   - [脚本记录(Isaac Sim和ROS2互相通讯，用h1跑强化学习policy)](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/ros2_tutorials/tutorial_ros2_rl_controller.html#)：
   ```
 # ros2 cmd init
