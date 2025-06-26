@@ -138,11 +138,13 @@ source install/local_setup.bash
 cd ~/IsaacSim-ros_workspaces/humble_ws/src/humanoid_locomotion_policy_example/h1_fullbody_controller/launch
 ros2 launch h1_fullbody_controller h1_fullbody_controller.launch.py # run the ROS2 policy
   ```
-   
+  - [Isaac Sim倒入]
 ## 其他
   - Issac Sim导入urdf
-    - [视频教程](https://www.youtube.com/watch?v=AMfEtZ4hyLY)
-	- [含urdf文件的示例项目：SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
+    - [视频教程1](https://www.youtube.com/watch?v=AMfEtZ4hyLY)
+      - [含urdf文件的示例项目：SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
+    - [视频教程2](https://www.youtube.com/watch?v=Ym5jav5scfA)
+      - [Joint Physics: Computing Stiffness and Damping in URDF Importers](https://lycheeai-hub.com/project-so-arm101-x-isaac-sim-x-isaac-lab-tutorial-series/so-arm-import-urdf-to-isaac-sim)
   - Isaac Gym(RL)
     - [Installation](file:///home/jay/workspace/IsaacGym_Preview_4_Package/isaacgym/docs/install.html)
       - [python joint_monkey.py缺少libpython3.7m.so.1.0库](https://blog.csdn.net/weixin_45392674/article/details/126300556): `export LD_LIBRARY_PATH=/home/jay/miniconda3/envs/rlgpu/lib`
