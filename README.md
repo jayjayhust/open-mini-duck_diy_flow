@@ -132,7 +132,7 @@ source /opt/ros/humble/setup.bash
 cd ~/IsaacSim-ros_workspaces/humble_ws
 source install/local_setup.bash
 # cd the h1_fullbody_controller ROS2 package and then run the ROS2 policy
-~/IsaacSim-ros_workspaces/humble_ws/src/humanoid_locomotion_policy_example/h1_fullbody_controller/launch
+cd ~/IsaacSim-ros_workspaces/humble_ws/src/humanoid_locomotion_policy_example/h1_fullbody_controller/launch
 ros2 launch h1_fullbody_controller h1_fullbody_controller.launch.py # run the ROS2 policy
   ```
    
