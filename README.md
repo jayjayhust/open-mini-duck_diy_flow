@@ -113,6 +113,13 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
 	- mujoco版本：3.3.3
 	- Issac Sim及对应的Isaac Sim Assets版本：[5.0](https://github.com/isaac-sim/IsaacSim?tab=readme-ov-file#quick-start)
         - Isaac Lab版本：[2.2](https://github.com/isaac-sim/IsaacLab/tree/feature/isaacsim_5_0?tab=readme-ov-file)
+        ```bash
+        # isaaclab install(https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/pip_installation.html#installing-isaac-lab)
+        conda create -n env_isaaclab python=3.10
+        conda activate env_isaaclab
+        pip install --upgrade --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
+        ./isaaclab.sh --install
+        ```
   - issues:
     - [GUI blur](https://forums.developer.nvidia.com/t/the-isaac-sim-gui-is-blurry/327759/11): Need to wait for the upgration of isaac sim (kit version should upper than 106.5.3, you can see the kit version in 'help'->'about'). You can try to upgrade issac sim from 4.5.0 to 5.0(not release the production version yet, you can build from github repository)?
     - [saac Sim ROS Workspace](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/installation/install_ros.html#enabling-rclpy-custom-ros-2-packages-and-workspaces-with-python-3-11)
