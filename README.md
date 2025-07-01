@@ -119,7 +119,7 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
         conda activate env_isaaclab
         pip install --upgrade --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
         ./isaaclab.sh --install  # cd isaaclab root directory
-         source _isaac_sim/setup_conda_env.sh
+        source _isaac_sim/setup_conda_env.sh  # avoid ModuleNotFoundError: No module named 'isaacsim' error
         ./isaaclab.sh -p scripts/tutorials/00_sim/create_empty.py
         # or
         python scripts/tutorials/00_sim/create_empty.py
