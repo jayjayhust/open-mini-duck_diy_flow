@@ -118,7 +118,11 @@ https://github.com/user-attachments/assets/7197f81b-ba7a-4c94-a2fc-c163c8b2312e
         conda create -n env_isaaclab python=3.10
         conda activate env_isaaclab
         pip install --upgrade --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
-        ./isaaclab.sh --install
+        ./isaaclab.sh --install  # cd isaaclab root directory
+         source _isaac_sim/setup_conda_env.sh
+        ./isaaclab.sh -p scripts/tutorials/00_sim/create_empty.py
+        # or
+        python scripts/tutorials/00_sim/create_empty.py
         ```
   - issues:
     - [GUI blur](https://forums.developer.nvidia.com/t/the-isaac-sim-gui-is-blurry/327759/11): Need to wait for the upgration of isaac sim (kit version should upper than 106.5.3, you can see the kit version in 'help'->'about'). You can try to upgrade issac sim from 4.5.0 to 5.0(not release the production version yet, you can build from github repository)?
